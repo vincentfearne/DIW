@@ -1,4 +1,4 @@
-CREATE TABLE Employes (
+CREATE TABLE Employees (
     emp_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
     emp_matricule INT NOT NULL,
     emp_nom VARCHAR(50) NOT NULL,
