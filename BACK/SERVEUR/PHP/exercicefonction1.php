@@ -1,15 +1,11 @@
 <?php
 
-function Test1 () 
-{ 
-   static $a=0; 
-   echo "$a<br />"; 
-   $a++;
-} 
+echo "<h3>Ecrivez une fonction qui permette de générer un lien :</h3>";
 
-// Appel de la fonction (3 fois)
-Test1(); 
-Test1(); 
-Test1(); 
+function faireunlien($lien,$texte)
+{
+   echo "<a href=$lien>".$texte;
+}
 
-?>
+faireunlien("https://www.reddit.com/", "Reddit Hug");
+
