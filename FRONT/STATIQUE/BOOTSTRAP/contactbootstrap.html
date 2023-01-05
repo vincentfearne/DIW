@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+
+
+
+  <body>
+
+    <div class="container col-12">
+
+      <!------------------Logo début du site-------------------------------->
+      <header class="row">
+          
+          <div class="text-left col-3">
+            <img src="/jarditou_css/src/img/jarditou_logo.jpg" alt="logo" title="logo jarditou" class="w-75">
+          </div>
+          <div class="col-9 mt-5 w-75 text-right h1">
+            Tout le jardin
+          </div>
+          
+      </header>
+      
+      <!-----------------------Menu----------------------------------------->
+
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="indexbootstrap.html">Jarditou.com</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="indexbootstrap.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tableaubootstrap.html">Tableau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactbootstrap.html" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </nav>
+    
+
+     
+      <!---------------------Banderolle promotion---------------------------->
+      
+      <img src="/jarditou_css/src/img/promotion.jpg" alt="promotion" title="promotion" id="promo" class="col-12">
+    
+      
+      <!-------------------------------------------début corps de la page----------------------------------------------------->
+
+      <div class="mt-4 ml-3">*Ces zones sont obligatoires</div><br>
+
+      
+    <article class="ml-3 my-4">
+        
+
+    <form>
+    
+    <legend>Vos coordonnées</legend><br>
+    
+        <div class="form-group">
+        <label for="nom">Votre nom* :</label>
+        <input type="text" name="nom" id="nom" minlength="1" class="form-control">
+        <span id="nom_manquant"></span><br>  
+    
+        <label for="prenom">Votre prénom* :</label>
+        <input type="text" name="prenom" id="prenom" class="form-control">
+        <span id="prenom_manquant"></span><br><br>  
+    
+        <label for="sexe">Sexe* :</label><input type="radio" name="homme" value="homme" id="sexe"> homme <input type="radio" name="femme" value="femme" class="sexe"> femme<br><br>
+               
+        <label for="date">Date de naissance* :</label>
+        <input type="date" name="ddn" id="date" requiered class="form-control">
+        <span id="date_manquante"></span><br>
+                
+        <label for="departement">Code postal* :</label>
+        <input type="text" name="departement" id="departement" maxlength="5" class="form-control">
+        <span id="departement_manquant"></span><br>
+              
+        <label for="adresse">Adresse :</label>
+        <input type="text" name="adresse" id="adresse" class="form-control">
+        <span id="adresse_manquante"></span><br>
+              
+        <label for="ville">Ville :</label>
+        <input type="text" name="ville" id="ville" class="form-control">
+        <span id="ville_manquante"></span><br>
+               
+        <label for="mail">Email* :</label>
+        <input type="email" name="mail" id="mail" class="form-control">
+        <span id="mail_manquant"></span><br>
+               
+    
+           
+        <legend>Votre demande</legend><br>
+        <label for="sujet">Sujet* :</label>
+        <select id="sujet" class="form-control">
+            <option value="Veuillez selectionner un sujet" selected>Veuillez selectionner un sujet</option>
+            <option value="Mes commandes">Mes commandes</option>
+            <option value="Question sur un produit">Question sur un produit</option>
+            <option value="Reclamation">Réclamation</option>
+            <option value="Autres">Autres</option>
+        </select><br><br>
+    
+        <label for="questions">Votre question* :</label>
+        <textarea name="questions" rows="3" cols="18" id="questions" class="form-control"></textarea>
+        <span id="questions_manquantes"></span><br>
+
+        <input type="checkbox" name="accepter" id="accepter"> *J'accepte le traitement informatique de ce formulaire<br><br>
+    
+    
+        <input type="submit" value="Envoyer" name="envoi" id="envoi"><input type="reset" value="Annuler">
+      </div>
+        </form>
+    
+    
+    
+    
+    </article>
+      
+      <!-------------------------------------------------------fin corps de la page-------------------------------------------------------->
+      
+
+
+      <!---------------Liste de fin sans page au bout des liens--------------------->
+      <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="mr-4 nav-item"><a href="#" title="Mention légales" class="menufin">Mention légales</a></li>
+              <li class="mr-4 nav-item"><a href="#" title="Horaires" class="menufin">Horaires</a></li>
+              <li class="mr-4"><a href="#" title="Plan du site" class="menufin">Plan du site</a></li>
+          </ul>
+          </nav>
+      </footer>
+    </div>
+      
+      
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
