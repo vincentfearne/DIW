@@ -29,7 +29,7 @@
 <br>
 <div class="row mx-auto">
     <h2 class="col-11">Liste des disques</h2>
-    <a class="btn btn-primary" href="artist_new.php" role="button">Ajouter</a>
+    <a class="btn btn-primary" href="disc_new.php" role="button">Ajouter</a>
 </div>
 <br>
 
