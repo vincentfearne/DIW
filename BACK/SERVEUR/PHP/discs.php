@@ -56,7 +56,7 @@
             <td><?= $disc->disc_genre ?></td>
             <td><?= $disc->disc_price ?></td>
             <!-- Ici, on ajoute un lien par artiste pour accéder à sa fiche : -->
-            <td><a class="btn btn-primary" role="button" href="artist_detail.php?id=<?= $disc->disc_id ?>">Détail</a></td>
+            <td><a class="btn btn-primary" role="button" href="disc_detail.php?id=<?= $disc->disc_id ?>">Détail</a></td>
         </tr>
         <?php endforeach; ?>
 
