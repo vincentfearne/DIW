@@ -38,36 +38,49 @@
 
 
 <body class="ml-2">
-    
+<br>
 <h2>Détails</h2>
-
+<br>
 <form class="form-group">
-    <input type="hidden" value="<?= $tableau->disc_id ?>">
-    <label>Title</label><br>
-    <input type="textbox" value="<?= $tableau->disc_title ?>" readonly="readonly">
-    <br><br>
-    <label>Year</label><br>
-    <input type="textbox" value="<?= $tableau->disc_year ?>" readonly="readonly">
-    <br><br>
-    <label>Label</label><br>
-    <input type="textbox" value="<?= $tableau->disc_label ?>" readonly="readonly">
-    <br><br>
-    <label>Artist</label><br>
-    <input type="textbox" value="<?= $tableau->artist_name ?>" readonly="readonly">
-    <br><br>
-    <label>Genre</label><br>
-    <input type="textbox" value="<?= $tableau->disc_genre ?>" readonly="readonly">
-    <br><br>
-    <label>Price</label><br>
-    <input type="textbox" value="<?= $tableau->disc_price ?>" readonly="readonly">
-    <br><br>
-    <label>Picture</label><br>
-    <img src="<?= $tableau->disc_picture ?>">
+
+<div class="card" style="width: 17%;">
+    <img class="card-img-top" src="<?= $tableau->disc_picture ?>" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title"><?= $tableau->disc_title ?></h5>
+            <div class="card-text form-group">
+                <input type="hidden" value="<?= $tableau->disc_id ?>">
+                <label>Title</label><br>
+                <input type="textbox" value="<?= $tableau->disc_title ?>" readonly="readonly">
+                <br><br>
+                <label>Year</label><br>
+                <input type="textbox" value="<?= $tableau->disc_year ?>" readonly="readonly">
+                <br><br>
+                <label>Label</label><br>
+                <input type="textbox" value="<?= $tableau->disc_label ?>" readonly="readonly">
+                <br><br>
+                <label>Artist</label><br>
+                <input type="textbox" value="<?= $tableau->artist_name ?>" readonly="readonly">
+                <br><br>
+                <label>Genre</label><br>
+                <input type="textbox" value="<?= $tableau->disc_genre ?>" readonly="readonly">
+                <br><br>
+                <label>Price</label><br>
+                <input type="textbox" value="<?= $tableau->disc_price ?>" readonly="readonly">
+                <br><br>
+            </div>
+            <a class="btn btn-primary" role="button" href="disc_form.php?id=<?= $tableau->disc_id ?>">Modifier</a>
+            <a class="btn btn-primary" role="button" href="script_disc_delete.php?id=<?= $tableau->disc_id ?>" role="button">Supprimer</a>
+            <a class="btn btn-primary" href="discs.php" role="button">Retour</a>
+    </div>
+</div>
+                <!-- <label>Picture</label><br>
+                <img src=""> -->
+         
+
+
     <br>
     <br>
-    <a class="btn btn-primary" role="button" href="disc_form.php?id=<?= $tableau->disc_id ?>">Modifier</a>
-    <a class="btn btn-primary" role="button" href="script_disc_delete.php?id=<?= $tableau->disc_id ?>" role="button">Supprimer</a>
-    <a class="btn btn-primary" href="discs.php" role="button">Retour</a>
+
     <br>
     <br>
 </form>
