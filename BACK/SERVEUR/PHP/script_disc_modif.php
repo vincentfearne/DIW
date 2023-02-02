@@ -46,5 +46,5 @@
     }
 
     // Si OK: redirection vers la page artist_detail.php
-    header("Location: disc_detail.php?id=" . $disc_id);
+    header("Location: discs.php");
     exit;

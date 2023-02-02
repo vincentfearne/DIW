@@ -32,6 +32,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>disc_form</title>
+    <link rel="stylesheet" href="disc.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
@@ -43,8 +44,8 @@
 
 <form action="script_disc_modif.php" method="post" class="form-group">
 
-<div class="card" style="width: 17%;">
-    <img class="card-img-top" src="<?= $tableau->disc_picture ?>" alt="Card image cap">
+<div class="card flex-row" style="width: 50%;">
+    <img class="card-img-right" src="<?= $tableau->disc_picture ?>" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title"><?= $tableau->disc_title ?></h5>
             <div class="card-text form-group">
@@ -72,8 +73,8 @@
                 <input type="hidden" value="<?= $tableau->disc_picture ?>" name="disc_picture">
                 <br>
                 <br>
-                <input type="submit" value="Valider">
-                <input type="reset" value="Annuler"><br><br>
+                <input type="submit" value="Valider" class="btn btn-primary">
+                <input type="reset" value="Annuler" class="btn btn-primary"><br><br>
 
             </div>
     </div>

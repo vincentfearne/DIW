@@ -1,9 +1,6 @@
-#acdc #acdcI
-{
-    float:left;
-    width:10%;
-}
-#acdc #acdcP
-{
-    margin-left:70%;
-}
+.card {
+    flex-direction: row;
+  }
+  .card img {
+    width: 100%;
+  }
