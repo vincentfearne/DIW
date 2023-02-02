@@ -6,7 +6,7 @@
     $db = connexionBase();
 
     // on lance une requête pour chercher toutes les fiches d'artistes
-    $requete = $db->query("SELECT * FROM artist");
+    $requete = $db->query("SELECT * FROM disc JOIN artist ON artist.artist_id = disc.artist_id");
     // on récupère tous les résultats trouvés dans une variable
     $tableau = $requete->fetchAll(PDO::FETCH_OBJ);
     // on clôt la requête en BDD
@@ -36,15 +36,19 @@
 <div class="form-group ml-2 mr-3">
 <form action="script_disc_ajout.php" method="POST">
 
+    <!-- <label for="disc_id">ID</label><br> -->
+    <input type="hidden" name="disc_id" id="disc_id" class="form-control">
+    <br>
+
     <label for="disc_title">Title</label><br>
     <input type="text" name="disc_title" id="disc_title" class="form-control">
     <br>
     
     <label for="artist_name">Artist</label><br>
     <select name="artist_name" id="artist_name" class="form-control">
-        <option value="">Choose an artist</option>
+        <option disable selected>Choose an artist</option>
         <?php foreach ($tableau as $artist): ?>
-            <option value = <?= $artist->artist_name ?>> <?= $artist->artist_name ?> </option>
+            <option value = <?= $artist->artist_id ?>> <?= $artist->artist_name ?> </option>
         <?php endforeach; ?>
     </select>
     <br>

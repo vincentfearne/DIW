@@ -66,7 +66,7 @@
     <br>
     <br>
     <a class="btn btn-primary" role="button" href="disc_form.php?id=<?= $tableau->disc_id ?>">Modifier</a>
-    <a class="btn btn-primary" href="disc_new.php" role="button">Supprimer</a>
+    <a class="btn btn-primary" role="button" href="script_disc_delete.php?id=<?= $tableau->disc_id ?>" role="button">Supprimer</a>
     <a class="btn btn-primary" href="discs.php" role="button">Retour</a>
     <br>
     <br>
